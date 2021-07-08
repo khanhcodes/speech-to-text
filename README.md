@@ -15,8 +15,9 @@ Speech To Text is a full stack web application built with Flask and deployed on 
 * SpeechRecognition library
 
 ### What I learned
+* Use Python and the Flask framework to build a back-end for web application
 * Implement Google's Speech Recognition API to analyse and transcribe the audio file
-* Use Flask to take in an Audio file and create both a GET and POST request on the same route
+* Deploy Flask application on Heroku
 
 ### Final product
 <img src="https://user-images.githubusercontent.com/85374251/124925608-3de50200-dfc2-11eb-93e1-d6ad95fb032a.png" width="800">
