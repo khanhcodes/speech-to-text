@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Recognition in Python</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&display=swap');
+</style>
+
+<style>
+
+.relative {
+position: relative;
+width: 100%;
+}
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+h1 {
+    color: DodgerBlue;
+    font-family: 'Fredoka One',calibri,arial, sans-serif, roboto;
+    font-weight: 5;
+    font-size: 50px;
+    text-align: center;
+  }
+
+h2 {
+    color: DodgerBlue;
+    font-family: 'Fredoka One',calibri,arial, sans-serif, roboto;
+    font-weight: 5;
+    font-size: 30px;
+    text-align: center;
+  }
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 10px 250px;
+  cursor: pointer;
+  font-family: arial;
+  font-weight: 600;
+  border-radius: 15px;
+  px;
+}
+
+body {
+  background-color: #ECF2F9;
+  margin: unset;
+}
+
+p {
+  font-family: open sans, arial, monospace, roboto;
+  color: #434344;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.custom-file-input {
+  color: grey;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  display: none;
+}
+.custom-file-input::before {
+  content: 'Upload file';
+  color: dodgerblue;
+  display: inline-block;
+  background: #F5F5F9;
+  border: 1px solid dodgerblue;
+  border-radius: 15px;
+  padding: 12px 28px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-family: arial;
+  position: absolute;
+  left: calc(50% - 122px / 2);
+  top: 0;
+}
+.custom-file-input:hover::before {
+  border-color: DodgerBlue;
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+}
+
+.submitButton:hover {
+	background-color:#41B6D2;
+}
+
+.creatorname {
+  font-family: open sans, arial, monospace, roboto;
+  color: #434344;
+  margin-left: 80vw;
+  font-size: 13px;
+}
+</style>
+
+
+<body>
+<div class="creatorname">
+      <p> Created by Khanh Nguyen </p>
+</div>
+
+<div id="speechContainer" class="root">
+    <img src="https://miro.medium.com/max/1024/1*hvhbk3n9SAcI3yS_D1IuXQ.png" alt="photo" style="width:380px" >
+    <h1>Speech To Text</h1>
+    <form method="post" enctype="multipart/form-data">
+      <div class="relative">
+        <input type="file" name="file" class="custom-file-input"/>
+      </div>
+        <br>
+
+        <input type="submit" class="submitButton" value="Transcribe"/>
+    </form>
+
+    {% if transcript != "" %}
+        <div id="speechTranscriptContainer">
+            <h2>Transcript</h2>
+            <p id="speechText">{{ transcript }}</p>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
