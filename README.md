@@ -30,7 +30,8 @@ Speech To Text is a full stack web application built with Flask and deployed on 
 2. Click the "Transcribe" button
 3. Wait for a few seconds and your transcript is ready!
 
-<img src="https://user-images.githubusercontent.com/85374251/125049807-fb293580-e066-11eb-94a9-e8b9bdd3a3ee.gif" width="800">
+<img src="https://user-images.githubusercontent.com/85374251/125050740-ded9c880-e067-11eb-9690-3db922ec49f4.gif" width="800">
+
 
 
 
