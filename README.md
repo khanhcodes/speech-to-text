@@ -26,8 +26,13 @@ Speech To Text is a full stack web application built with Flask and deployed on 
 <img src="https://user-images.githubusercontent.com/85374251/124925567-302f7c80-dfc2-11eb-9241-b928ffc5ddb3.png" width="800">
 
 ### How to use
+1. Upload your pre-recorded audio (.mp3, .wav, or .mpeg only)
+2. Click the "Transcribe" button
+3. Wait for a few seconds and your transcript is ready!
 
-https://user-images.githubusercontent.com/85374251/125048444-8bff1180-e065-11eb-8b48-3e76ae801f7d.mp4
+<gif src="https://user-images.githubusercontent.com/85374251/125049646-cfa64b00-e066-11eb-81ab-62e9ec0f6c30.gif" width="800">
+
+
 
 
 
